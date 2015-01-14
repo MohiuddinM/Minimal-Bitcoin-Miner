@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+//using System.Linq;
 using System.Text;
 using System.Net;
 using System.IO;
@@ -248,9 +248,10 @@ namespace MiniMiner
         private static Pool SelectPool()
         {
             ClearConsole();
-            Print("Chose a Mining Pool 'user:password@url:port' or leave empty to skip.");
-            Console.Write("Select Pool: ");
-            string login = ReadLineDefault("lithander_2:foo@btcguild.com:8332");
+            //Print("Chose a Mining Pool 'user:password@url:port' or leave empty to skip.");
+            //Console.Write("Select Pool: ");
+            //string login = ReadLineDefault("lithander_2:foo@btcguild.com:8332");
+            string login = "myhashhas.worker1:UsXbvvan@api.bitcoin.cz:8332";
             return new Pool(login);
         }
 
